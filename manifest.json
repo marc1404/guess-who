@@ -1,0 +1,13 @@
+{
+  "name": "Guess Who?",
+  "description": "Extension which replaces usernames on GitHub with a user's full name.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["contentScript.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
